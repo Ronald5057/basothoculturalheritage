@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Feedback</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fdfdfd;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #1a1a1a;
+            padding: 12px 0;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            position: fixed;
+            left: 0;
+            right: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #f5f5f5;
+            font-size: 14px;
+            padding: 5px 0;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: #d4af37;
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #d4af37;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #fff3e0;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        header p {
+            font-size: 14px;
+            max-width: 650px;
+            margin: 0 auto;
+            color: #444;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        form {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        form input,
+        form textarea,
+        form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border 0.3s, box-shadow 0.3s;
+        }
+
+        form input:focus,
+        form textarea:focus,
+        form select:focus {
+            border: 1px solid #1a73e8;
+            box-shadow: 0 0 5px rgba(26, 115, 232, 0.5);
+            outline: none;
+        }
+
+        form button {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            width: 100%;
+        }
+
+        form button:hover {
+            background: #d4af37;
+            color: #1a1a1a;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">Traditional Clothing</a></li>
+            <li><a href="page3.html">Music & Dance</a></li>
+            <li><a href="page4.html">Crafts & Art</a></li>
+            <li><a href="page5.html">Contact & Feedback</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Contact & Feedback</h1>
+        <p>We’d love to hear from you! Please fill in the form below to share your feedback or ask questions about Basotho culture.</p>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="topic">Topic of Interest</label>
+            <select id="topic" name="topic" required>
+                <option value="">-- Select a topic --</option>
+                <option value="clothing">Traditional Clothing</option>
+                <option value="music">Music & Dance</option>
+                <option value="crafts">Crafts & Art</option>
+                <option value="general">General Feedback</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basotho Crafts & Art</title>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #1a1a1a;
+            padding: 12px 0;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            position: fixed;
+            right: 0;
+            left: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #f5f5f5;
+            font-size: 14px;
+            padding: 5px 0;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: #d4af37;
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #d4af37;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #e0f2f1;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        header p {
+            font-size: 14px;
+            max-width: 650px;
+            margin: 0 auto;
+            color: #444;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        article {
+            background-color: #fff;
+            border-radius: 6px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+
+        article img {
+            width: 200px;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+
+        article img:hover {
+            transform: scale(1.05);
+        }
+
+        article h3 {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #1a1a1a;
+        }
+
+        article p {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        article a {
+            font-size: 13px;
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        article a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">Traditional Clothing</a></li>
+            <li><a href="page3.html">Music & Dance</a></li>
+            <li><a href="page4.html">Crafts & Art</a></li>
+            <li><a href="page5.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Basotho Crafts & Art</h1>
+        <p>Basotho crafts represent creativity, history, and skill passed down through generations. From woven baskets to beadwork, these artworks are central to Basotho cultural identity.</p>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\woven basket.jpg" alt="Woven Basket">
+                <h3>Woven Basket</h3>
+                <p>Handmade using local grasses, baskets are both functional and decorative.</p>
+                <a href="https://pin.it/3ivQmh5gF" target="_blank">Learn more</a>
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\leritshoana.jpg" alt="Clay Pottery">
+                <h3>Clay Pottery</h3>
+                <p>Basotho women craft pottery for cooking, storage, and ceremonies.</p>
+                <a href="https://alantours.co.za/about-us/arts-and-crafts-traditional-clay-pots/" target="_blank">Learn more</a>
+            </article>
+
+            <article>
+               <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\lifaha.jpg" alt="Beadwork">
+                <h3>Beadwork</h3>
+                <p>Colorful beads are used to create necklaces, bracelets, and decorative art.</p>
+                <a href="https://example.com" target="_blank">Learn more</a>
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\likobo.jpg" alt="Blanket Art">
+                <h3>Blanket Art</h3>
+                <p>Traditional Basotho blankets are often customized with symbolic patterns.</p>
+                <a href="https://ahmeds.co.za/products/blankets-basotho-blanket" target="_blank">Learn more</a>
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\molamu.jpg" alt="Wood Carving">
+                <h3>Wood Carving</h3>
+                <p>Wooden sculptures and tools reflect Basotho daily life and spirituality.</p>
+                <a href="https://kombat-instruments-limited-2.myshopify.com/products/molamu-sticks-lesotho-africa" target="_blank">Learn more</a>
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\mohair.jpg" alt="Mohair Weavings">
+                <h3>Mohair Weavings</h3>
+                <p>Lesotho is best known for its mohair weaving tradition.</p>
+                <a href="https://www.africancraft.com/lesotho.php?srsltid=AfmBOookJLUrgyY9u6bqmcD3o-RqVmSK-cIt5HGTPmrDeEPc8KWKgzsU">Learn more</a>
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\litema.jpg" alt="Litema">
+                <h3>Letima</h3>
+                <p>Litema is not just a decorative art form; it's a way of expressing Basotho culture and heritage. The practice of decorating homes with Litema is a form of social and cultural bonding within the Basotho community.</p>
+                <a href="https://motsodesigned.com/blogs/neo-afro-living/litema-a-traditional-mural-art-form-practiced-by-basotho-women-in-lesotho-2?srsltid=AfmBOoowmK1k56OSEX_dYcrttml1cMEMQKFMT6PVq-jF50OKXZRZV5_3">Learn more</a>
+            </article>
+
+
+
+        </section>
+    </main>
+
+</body>
+</html>

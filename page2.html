@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basotho Traditional Clothing</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #1a1a1a;
+            padding: 12px 0;
+            position: fixed;
+            left: 0;
+            right: 0;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #f5f5f5;
+            font-size: 14px;
+            padding: 5px 0;
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        /* Navigation hover underline animation */
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px;
+            background: #d4af37;
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #d4af37;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #e0f2f1;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        header p {
+            font-size: 14px;
+            max-width: 650px;
+            margin: 0 auto;
+            color: #444;
+        }
+
+        main section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        article {
+            background-color: #fff;
+            border-radius: 6px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+
+        article img {
+            width: 200px;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 10px;
+            transition: transform 0.3s;
+        }
+
+        article img:hover {
+            transform: scale(1.05);
+        }
+
+        article h3 {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #1a1a1a;
+        }
+
+        article p {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        article a {
+            font-size: 13px;
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        article a:hover {
+            text-decoration: underline;
+        }
+
+        .album {
+           padding: 20px;
+           text-align: center;
+        }
+
+        .gallery {
+           display: grid;
+           grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+           gap: 15px;
+           margin-top: 20px;
+        }
+
+        .gallery img {
+           width: 100%;
+           border-radius: 6px;
+           box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+           transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+           transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page2.html">Traditional Clothing</a></li>
+            <li><a href="page3.html">Music & Dance</a></li>
+            <li><a href="page4.html">Crafts & Art</a></li>
+            <li><a href="page5.html">Contact & Feedback</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Basotho Traditional Clothing</h1>
+        <p>The Basotho people are known for their unique and symbolic traditional attire, which 
+        reflects their history, values, and way of life. Below are examples of clothing that 
+        represent Basotho culture.</p>
+    </header>
+
+    <main>
+        <section>
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\kobo.jpeg" alt="Basotho Blanket" width="250">
+                <h3>Basotho Blanket</h3>
+                <p>A symbol of pride and identity, worn during ceremonies and daily life.</p>
+                <a href="https://en.wikipedia.org/wiki/Basotho_blanket" target="_blank">Learn more</a>
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\katiba.jpeg" alt="Traditional Hat - Mokorotlo" width="250">
+                <h3>Mokorotlo Hat</h3>
+                <p>The famous cone-shaped hat, representing peace and unity.</p>
+                <a href="https://en.wikipedia.org/wiki/Mokorotlo" target="_blank">Learn more</a>
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\thethana.jpeg" alt="Basotho Skirt" width="250">
+                <h3>Traditional Skirt</h3>
+                <p>Worn by Basotho women during cultural ceremonies and dances.</p>
+                <a href="https://example.com" target="_blank">Learn more</a>
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\20221015_111843.jpg" alt="Seshoeshoe" width="250">
+                <h3>Seshoeshoe</h3>
+                <p>Worn by Basotho women during cultural ceremonies and dances.</p>
+                <a href="https://en.wikipedia.org/wiki/Shweshwe" target="_blank">Learn more</a>
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\leqapa.jpg" alt="leqapa" width="250">
+                <h3>Leqapa</h3>
+                <p>Worn by Basotho men after they have returned from initiation school.</p>
+                <a href="https://example.com" target="_blank">Learn more</a>
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\mose oa khomo.jpg" alt="Basotho Skirt" width="250">
+                <h3>Mose Oa Khomo</h3>
+                <p>Worn by Basotho women during cultural ceremonies and dances. And it is made of cow skin.</p>
+                <a href="https://www.slideshare.net/slideshow/meaparo-ea-basothopptx/253067378" target="_blank">Learn more</a>
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\bacha.jpg" alt="Basotho Skirt" width="250">
+                <h3>Traditional teenager Cloths</h3>
+                <p>Young Basotho girls wear (a) Sefaha sa letsopa le Thethana ya banana, which in translation are a neckpiece and a skirt.</p>
+                <a href="https://patonbrands.com/basotho/" target="_blank">Learn more</a>
+            </article>
+
+             <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\lebollo.jpg" alt="Basotho Skirt" width="250">
+                <h3>Adulthood</h3>
+                <p> Young men and women go to initiation school where they are taught about life, growth and being a contributing member of society. Young girls get taught how to take care of a household while boys are taught about courage and endurance.</p>
+                <a href="https://patonbrands.com/basotho/" target="_blank">Learn more</a>
+            </article>
+
+             <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\leqapa2.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\likobo2.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\mosotho.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\thethana2.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\tjale.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\lingoale.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\bo-nkhono.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\lenyalo.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\balisana.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\balisana2.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\sesotho.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\matsema.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\moroetsana.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\likhomo.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\pere.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\bana.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\mshana.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\leraba.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\morena leraba.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\basotho.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\bashemane.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\makoloane.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\lapeng.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\morena.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\monna.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\matlo.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <img src="C:\Users\ronal\OneDrive\Documents\New folder\Basotho Cultural Heritage Website\Images\LetsieIII.jpg" alt="Basotho Skirt" width="250">
+            </article>
+
+            <article>
+                <ul>
+                  <h3>Other references:</h3>
+                  <li><a href="https://www.101lasttribes.com/tribes/basotho.html" target="_blank">Africa 101 Last Tribes </a></li>
+                  <li><a href="https://www.africancraft.com/lesotho.php?srsltid=AfmBOopz15G4Z7lDrfHhMbtdr4q6Gom2iEQmpKKqGCgUt6PCFFw6HJKj" target="_blank">African Craft</a></li>
+                  <li><a href="https://fashiongtonpost.com/lesotho-traditional-clothing/" target="_blank">The Fashiongton Post</a></li>
+                </ul>
+            </article>
+
+
+        </section>
+    </main>
+</body>
+</html>
